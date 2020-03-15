@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="ie=edge" http-equiv="X-UA-Compatible">
+        <title>My Team - Profile</title>
+        <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
+        <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    </head>
+    <body>
+
+        <style>
+
+            body {
+                font-family: 'Lora', serif;
+                background: url("../images/interlaced.png");
+            }
+
+            header {
+                background-color: teal;
+                color: white;
+                text-align: center;
+                padding: 15px;
+            }
+
+            .card-body {
+                font-size: 24px;
+            }
+
+            .card-title {
+                font-size: 26px;
+            }
+
+            .card {
+                margin: 25px;
+                border: outset;
+            }
+        </style>
+
+        <header>
+            <h1>Team Profile</h1>
+        </header>
+
+        <br/>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body" style="background-color: gold;">
+                            <h5 class="card-title">${managerName}</h5>
+                            <p class="card-text">
+                                <i class="fas fa-coffee"></i>
+                                Manager</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <strong>ID</strong>: ${managerID}</li>
+                            <li class="list-group-item">
+                                <strong>Email</strong>: ${managerEmail}</li>
+                            <li class="list-group-item">
+                                <strong>Office Number</strong>: ${managerOffice}</li>
+                        </ul>
+                    </div>
+                </div>
